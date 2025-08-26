@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import raft_footer_logo from '../../../../public/svgs/raft_footer_logo.svg';
-import qr_code from '../../../../public/svgs/qr_code.svg';
-import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
-import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
+import ic_document_duplicate from '../../../../public/svgs/ic_document_duplicate.svg';
 import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
@@ -44,20 +42,16 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={raft_footer_logo} alt="raft_footer_logo" />
+          <Image src={raft_footer_logo} alt="poligap_ai_footer_logo" />
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
             <QRContainer>
               <QRImageCtn>
-                <Image src={qr_code} alt="qr_code" />
+                <Image src={ic_document_duplicate} alt="documents icon" />
               </QRImageCtn>
               <TextCtn>
-                <p>Scan to download App on the Playstore and Appstore.</p>
-                <IconCtn>
-                  <Image src={ic_google_playstore} alt="playstore icon" />
-                  <Image src={ic_baseline_apple} alt="apple icon" />
-                </IconCtn>
+                <p>AI-powered compliance and contract analysis.</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -80,7 +74,7 @@ const Footer = () => {
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Raft Corp, LLC.
+              PoliGap AI
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

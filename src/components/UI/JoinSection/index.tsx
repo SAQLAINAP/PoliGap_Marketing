@@ -9,33 +9,14 @@ import {
   Testimony,
   UserInfo,
   Name,
-  Avatar,
-  PaginationButtonContainer,
-  Previous,
-  Next,
 } from './styles';
-import ic_arrow_left from '../../../../public/svgs/ic_arrow_left.svg';
-import ic_arrow_right from '../../../../public/svgs/ic_arrow_right.svg';
-import Image from 'next/image';
 import { MaskText } from '@/components';
 import { useIsMobile } from '../../../../libs/useIsMobile';
 import { Props, desktopHeaderPhrase, testimonials } from './constants';
+import Link from 'next/link';
 
 const JoinSection = () => {
-  const [testimonialsArr, setTestimonialsArr] = useState<Props[]>(testimonials);
-
-  const next = () => {
-    const newArr = [...testimonialsArr.slice(1), testimonialsArr[0]];
-    setTestimonialsArr(newArr);
-  };
-
-  const previous = () => {
-    const newArr = [
-      ...testimonialsArr.slice(-1),
-      ...testimonialsArr.slice(0, -1),
-    ];
-    setTestimonialsArr(newArr);
-  };
+  const [testimonialsArr] = useState<Props[]>(testimonials);
 
   const isMobile = useIsMobile();
 
@@ -50,28 +31,19 @@ const JoinSection = () => {
         </Header>
         <TestimonialWrapper>
           {mappedTestimonials.map((t, i) => (
-            <Testimonial key={i}>
-              <Testimony>{t.testimony}</Testimony>
-              <UserInfo>
-                <Name>
-                  <MaskText phrases={new Array(t.person)} tag="h3" />
-                  <MaskText phrases={new Array('Happy RAFT User')} tag="p" />
-                </Name>
-                <Avatar>
-                  <Image src={t.avatar} alt="user avatar" />
-                </Avatar>
-              </UserInfo>
-            </Testimonial>
+            <Link key={i} href={t.redirect || '#'} style={{ textDecoration: 'none' }}>
+              <Testimonial>
+                <Testimony>{t.testimony}</Testimony>
+                <UserInfo>
+                  <Name>
+                    <MaskText phrases={new Array(t.person)} tag="h3" />
+                    <MaskText phrases={new Array('Learn More')} tag="p" />
+                  </Name>
+                </UserInfo>
+              </Testimonial>
+            </Link>
           ))}
         </TestimonialWrapper>
-        <PaginationButtonContainer>
-          <Previous onClick={previous}>
-            <Image src={ic_arrow_left} alt="arrow_left" />
-          </Previous>
-          <Next onClick={next}>
-            <Image src={ic_arrow_right} alt="arrow_right" />
-          </Next>
-        </PaginationButtonContainer>
       </Inner>
     </Wrapper>
   );

@@ -7,39 +7,45 @@ export type Props = {
   testimony: string;
   person: string;
   avatar: StaticImageData;
+  redirect?: string;
 };
 
 export const testimonials = [
   {
     testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
+      'Discover our Contract Reviewer Agent, automating clause analysis with 95% specificity for GDPR and SOC 2 contracts. Click to learn more.',
+    person: 'Contract Reviewer Agent',
     avatar: robert_fox,
+    redirect: '/features/contract-reviewer',
   },
   {
     testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
+      "Explore our Task Management Agent, assigning owners and due dates with plain-English recommendations. Click to learn more.",
+    person: 'Task Management Agent',
     avatar: cameron_williamson,
+    redirect: '/features/task-management',
   },
   {
     testimony:
-      "RAFT's financial planning services have been a lifeline for me. I always struggled with managing my money, but their team crafted a tailored plan that addressed my goals and concerns. It's been a game-changer in achieving my financial dreams",
-    person: 'Esther Howard',
+      'Check out our Evidence Export Agent, generating PDF/CSV reports for audit readiness. Click to learn more.',
+    person: 'Evidence Export Agent',
     avatar: esther_howard,
+    redirect: '/features/evidence-export',
   },
   {
     testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
+      'Explore our Task Management Agent, assigning owners and due dates with plain-English recommendations. Click to learn more.',
+    person: 'Task Management Agent',
     avatar: cameron_williamson,
+    redirect: '/features/task-management',
   },
   {
     testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
+      'Discover our Contract Reviewer Agent, automating clause analysis with 95% specificity for GDPR and SOC 2 contracts. Click to learn more.',
+    person: 'Contract Reviewer Agent',
     avatar: robert_fox,
+    redirect: '/features/contract-reviewer',
   },
 ];
 
-export const desktopHeaderPhrase = ['Join over 3 million', 'members'];
+export const desktopHeaderPhrase = ['Explore PoliGap AI Features'];

@@ -3,39 +3,45 @@ import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Introducing RAFT's Next-", 'Gen Cards'];
+export const desktopHeaderPhrase = [
+  "PoliGap's Next-Gen",
+  'Contract Reviewer',
+];
 export const desktopParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards. Elevate your banking",
-  'experience with cutting-edge features, security, and unprecedented',
-  'convenience.',
+  " Discover PoliGap's latest innovation – our AI-powered Contract Reviewer.",
+  ' Elevate your contract review experience with cutting-edge clause analysis,',
+  'customization, and actionable insights.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing RAFT's", 'Next-Gen Cards'];
+export const mobileHeaderPhrase = [
+  "PoliGap's Next-Gen",
+  'Contract Reviewer',
+];
 export const mobileParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards.",
-  ' Elevate your banking experience with cutting-edge',
-  'features, security, and unprecedented',
-  'convenience.',
+  " Discover PoliGap's AI-powered Contract Reviewer.",
+  ' Elevate your contract review experience with cutting-edge',
+  'clause analysis, customization, and',
+  'actionable insights.',
 ];
 
 export const edges = [
   {
-    point: 'Contactless Technology',
+    point: 'Automated Clause Review',
     details:
-      'Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.',
+      'Our platform features automated clause review, enabling swift, secure contract analysis with a simple upload, tailored to your standards.',
     icon: ic_document_duplicate,
   },
   {
-    point: 'Personalization',
+    point: 'Contract Customization',
     details:
-      'Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.',
+      'Customize your contracts to fit your needs. Select standard or custom templates with citations and tailored clause suggestions.',
     icon: ic_identification,
   },
   {
-    point: 'Enhanced Security',
+    point: 'Review-Ready Reports',
     details:
-      'Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.',
+      'Your contract security is our priority. Our platform delivers PDF/CSV review reports to ensure clarity and protect your agreements.',
     icon: ic_lock_closed,
   },
 ];

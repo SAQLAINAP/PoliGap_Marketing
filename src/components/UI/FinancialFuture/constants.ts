@@ -2,56 +2,55 @@ import ic_money_send from '../../../../public/svgs/ic_money_send.svg';
 import ic_wallet_minus from '../../../../public/svgs/ic_wallet_minus.svg';
 export const cardsInfo = [
   {
-    title: 'Spend Better',
+    title: 'Comply Better',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
+      'Set and achieve compliance goals with ease, automate task assignments, and ensure audit readiness without the stress.',
     icon: ic_money_send,
   },
   {
-    title: 'Invest Better',
+    title: 'Analyze Better',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
+      'Analyze risks and gaps with ease, automate recommendations, and improve AI accuracy by 15% per cycle with PoliGap.',
     icon: ic_wallet_minus,
   },
 ];
 
 export const stats = [
   {
-    number: '50+',
-    subtitle: 'cities',
+    number: '5–8',
+    subtitle: 'Design Partners',
   },
   {
-    number: '50,000+',
-    subtitle: 'transactions',
+    number: '10+',
+    subtitle: 'Paid Customers (3–6 Months)',
   },
   {
-    number: '3M+',
-    subtitle: 'users',
+    number: '75–100',
+    subtitle: 'Logos (12–18 Months)',
   },
   {
-    number: '5+',
-    subtitle: 'user ratings',
+    number: '≥80%',
+    subtitle: 'Recommendation Accuracy (Validation KPIs)',
   },
 ];
 
 // For desktop
 export const desktopHeaderPhrase = [
-  'Confidently Shape Your',
-  'Financial Future',
+  'Confidently Master Your',
+  'Compliance Future',
 ];
 export const desktopParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape your financial future. Our modern',
-  'approach simplifies saving and investing, making it easier than ever.',
+  'At PoliGap, we empower you to confidently master your compliance future. Our AI-driven',
+  'approach simplifies risk management and task closure, making it faster than ever.',
 ];
 
 // For mobile
 export const mobileHeaderPhrase = [
-  'Confidently Shape',
-  ' Your Financial Future',
+  'Confidently Master',
+  ' Your Compliance Future',
 ];
 export const mobileParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape',
-  'your financial future. Our modern approach',
-  'simplifies saving and investing, making it easier',
-  'than ever.',
+  'At PoliGap, we empower you to master your compliance future.',
+  'Our AI-driven approach simplifies risk management and task closure,',
+  'making it faster than ever.',
 ];

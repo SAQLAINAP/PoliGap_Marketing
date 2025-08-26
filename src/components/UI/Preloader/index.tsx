@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import ic_import from '../../../../public/svgs/ic_import.svg';
 
-import { Wrapper, Inner, SecondOverlay } from './styles';
+import { Wrapper, Inner, SecondOverlay, Subtitle } from './styles';
 import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
@@ -11,7 +11,8 @@ const Preloader = ({
 }: {
   setComplete: Dispatch<SetStateAction<boolean>>;
 }) => {
-  const word = ['R', 'a', 'f', 't'];
+  const wordMain = ['P', 'O', 'L', 'I', 'G', 'A', 'P'];
+  const wordSecond = ['A', 'I'];
 
   const spans = useRef<any>([]); // Create a ref to store the span elements
   const imageRef = useRef(null);
@@ -64,16 +65,27 @@ const Preloader = ({
         <Inner>
           <Image ref={imageRef} src={ic_import} alt="import icon" />
           <div>
-            {word.map((t, i) => (
+            {wordMain.map((t, i) => (
               <div
-                key={i}
-                ref={(element) => (spans.current[i] = element)} // Assign ref to each span
+                key={`main-${i}`}
+                ref={(el) => (spans.current[i] = el)} // Assign ref to each span
+              >
+                {t}
+              </div>
+            ))}
+          </div>
+          <div>
+            {wordSecond.map((t, i) => (
+              <div
+                key={`second-${i}`}
+                ref={(el) => (spans.current[wordMain.length + i] = el)}
               >
                 {t}
               </div>
             ))}
           </div>
         </Inner>
+        <Subtitle>By Kroolo</Subtitle>
       </Wrapper>
       <SecondOverlay ref={secondOverlayRef}></SecondOverlay>
     </>

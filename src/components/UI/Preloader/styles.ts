@@ -13,8 +13,9 @@ export const Wrapper = styled.div`
   bottom: 0;
   right: 0;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Inner = styled.div`
@@ -67,4 +68,16 @@ export const SecondOverlay = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
+`;
+
+export const Subtitle = styled.div`
+  margin-top: 0.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;

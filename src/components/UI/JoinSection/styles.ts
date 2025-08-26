@@ -39,6 +39,8 @@ export const TestimonialWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -47,15 +49,28 @@ export const TestimonialWrapper = styled.div`
 
 export const Testimonial = styled.div`
   display: flex;
-  max-width: 26rem;
-  padding: 1.5rem 2rem;
+  width: 100%;
+  padding: 1.75rem 2rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
-  border-left: 2px solid var(--Background, #070606);
+  gap: 1.25rem;
+  border: 1px solid rgba(7, 6, 6, 0.08);
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: 0 8px 24px rgba(7, 6, 6, 0.06);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  cursor: pointer;
+  height: 100%;
+  min-height: 14rem;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(7, 6, 6, 0.1);
+    border-color: rgba(7, 6, 6, 0.14);
+  }
 
   @media (max-width: 768px) {
-    border-left: none;
+    width: 100%;
   }
 `;
 
@@ -94,9 +109,9 @@ export const Name = styled.div`
   }
 
   p {
-    color: #292929;
+    color: #1d4ed8; /* link-like accent */
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   @media (max-width: 768px) {

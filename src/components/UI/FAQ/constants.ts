@@ -3,8 +3,15 @@ type FAQItem = {
   answer: string;
 };
 
-export const desktopHeaderPhrase = ['Frequently asked', 'questions'];
-export const mobileHeaderPhrase = ['Frequently', 'asked', 'questions'];
+export const desktopHeaderPhrase = [
+  'Frequently Asked Questions about',
+  'PoliGap',
+];
+export const mobileHeaderPhrase = [
+  'Frequently Asked',
+  'Questions about',
+  'PoliGap',
+];
 export const animate = {
   initial: {
     y: '100%',
@@ -19,23 +26,23 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'How do I create an account with RAFT?',
+    question: 'How do I get started with PoliGap?',
     answer:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'To get started with PoliGap, visit our website and sign up for a free trial. You’ll need to provide your email and create a password. Once registered, you can upload your first contract for analysis within minutes.',
   },
   {
-    question: 'How does RAFT ensure the security of my financial data?',
+    question: 'How does PoliGap protect my contract data?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'PoliGap uses advanced encryption to secure your contract data both in transit and at rest. We comply with GDPR and SOC 2 standards, and all uploads are processed through secure servers with strict access controls.',
   },
   {
-    question: 'What types of transactions can I perform with RAFT?',
+    question: 'What types of contract reviews can I perform with PoliGap?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'With PoliGap, you can perform reviews for various contract types, including vendor agreements, NDAs, and compliance documents like GDPR and ISO 27001, with automated clause analysis and gap identification.',
   },
   {
-    question: 'What benefits does RAFT offer for wealth management?',
+    question: 'What benefits does PoliGap offer for contract management?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'PoliGap offers faster review cycles (up to 40% improvement), AI-driven task assignment with due dates, and exportable PDF/CSV reports for audits, enhancing efficiency and compliance readiness.',
   },
 ];

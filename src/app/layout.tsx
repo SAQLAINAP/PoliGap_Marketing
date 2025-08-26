@@ -3,8 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Raft',
-  description: 'Building the future of banking',
+  title: 'PoliGap AI',
+  description: 'Building The future of AI Compliance analysis',
 };
 
 export default function RootLayout({

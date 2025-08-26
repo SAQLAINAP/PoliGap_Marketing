@@ -4,44 +4,42 @@ import wealth_management from '../../../../public/images/wealth_management.png';
 import financial_planning from '../../../../public/images/financial_planning.png';
 // For desktop
 export const desktopHeaderPhrases = [
-  'Elevate Your Financial',
-  'Journey with RAFT',
+  'SuperCharge Your Contract Policy Analysis',
+  'with the Power of PoliGap AI',
 ];
 export const desktopParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From investments to payments,',
-  "we've got you covered. Join us and unlock your potential today.",
+  'Revolutionize compliance with AI-driven insights',
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From',
-  "investments to payments, we've got you covered.",
-  'Join us and unlock your potential today.',
+  'Revolutionize compliance',
+  'with AI-driven insights',
 ];
 
 export const offers = [
   {
     illustration: seamless_payments,
-    title: 'Seamless Payments',
+    title: 'Streamlined Compliance Checks',
     details:
-      'Enjoy secure, seamless transactions that make managing your money a breeze.',
+      'Experience secure, efficient compliance processes that simplify risk management with PoliGap AI.',
   },
   {
     illustration: smart_investing,
-    title: 'Smart Investing',
+    title: 'Intelligent Risk Detection',
     details:
-      'Grow your wealth confidently with our personalized investment solutions, tailored to your financial goals.',
+      'Identify risks confidently with AI-driven analysis, tailored to GDPR, ISO 27001, and SOC 2 standards.',
   },
   {
     illustration: wealth_management,
-    title: 'Wealth Management',
+    title: 'Task Management',
     details:
-      'Make informed decisions for your financial future with our wealth management expertise.',
+      'Assign and track tasks effectively with plain-English recommendations and due dates.',
   },
   {
     illustration: financial_planning,
-    title: 'Financial Planning',
+    title: 'Evidence Export',
     details:
-      'Achieve your financial dreams with our comprehensive financial planning services, guiding you toward a secure future.',
+      'Secure your audits with comprehensive PDF/CSV evidence exports for compliance readiness.',
   },
 ];

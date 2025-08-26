@@ -114,21 +114,23 @@ export const Title = styled.div`
 `;
 
 export const BriefNote = styled.div`
-  max-height: 54.75rem;
+  max-height: none;
   padding: 8.25rem 4.5rem;
   background: var(--emerald);
 
   p {
     color: var(--Background, #070606);
-    font-size: 8rem;
+    font-size: 6.75rem;
     font-weight: 400;
     max-width: 1440px;
+    line-height: 1.1;
   }
 
   @media (max-width: 768px) {
     padding: 2rem 1.5rem;
     p {
-      font-size: 3.75rem;
+      font-size: 3.5rem;
+      line-height: 1.15;
     }
   }
 `;

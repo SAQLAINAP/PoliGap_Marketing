@@ -4,53 +4,47 @@ import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
 import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ['Your Financial Freedom,', 'Your Way'];
+export const desktopHeaderPhrase = ['Your Compliance Control,', 'Your Way'];
 export const desktopParagraphPhrase = [
-  'We believe that managing your finances should be effortless and cost-effective.',
-  "That's why we offer you the freedom you deserve.",
+  'We believe that managing compliance should be streamlined and efficient with PoliGap AI.',
+  "That's why we deliver the freedom to focus on growth, not compliance burdens.",
 ];
 export const desktopBriefNotePhrase = [
-  'Smart investments,',
-  'secure payments, and',
-  'expert guidance, all in',
-  'one place.',
+  'AI-Powered Compliance Solutions, streamlined vendor risk assessments,',
+  'and intelligent task management — one platform with PoliGap AI.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Your Financial', 'Freedom, Your Way'];
+export const mobileHeaderPhrase = ['Your Compliance Control,', 'Your Way'];
 export const mobileParagraphPhrase = [
-  'We believe that managing your finances should be',
-  "effortless and cost-effective. That's why we offer",
-  ' you the freedom you deserve.',
+  'We believe that managing compliance should be',
+  'streamlined and efficient with PoliGap AI.',
+  "That's why we deliver the freedom to",
+  'focus on growth, not compliance burdens.',
 ];
 
 export const mobileBriefNotePhrase = [
-  'Smart',
-  ' investments,',
-  'secure',
-  ' payments,',
-  'and expert',
-  'guidance, all',
-  'in one place.',
+  'AI-Powered Compliance Solutions, streamlined vendor risk assessments,',
+  'and intelligent task management — one platform with PoliGap AI.',
 ];
 
 export const edges = [
   {
-    point: 'No minimum balance fees',
+    point: 'No Setup Costs',
     details:
-      'Say goodbye to minimum balance fees. Your account, your balance—no hidden charges',
+      'Say goodbye to setup costs. Start with PoliGap AI—no hidden charges for your first assessment.',
     icon: ic_banknotes,
   },
   {
-    point: 'No monthly fees',
+    point: 'No Subscription Overheads',
     details:
-      'Bank with us without worrying about monthly fees. Keep more of your money where it belongs—in your account',
+      'Use PoliGap without worrying about subscription overheads. Maximize your compliance budget.',
     icon: ic_circle_stack,
   },
   {
-    point: 'No bank transfer fees',
+    point: 'No Integration Fees',
     details:
-      'Seamlessly transfer funds without the extra cost. Send and receive money with zero bank transfer fees.',
+      'Seamlessly integrate with existing tools without extra costs. Connect PoliGap AI with zero integration fees.',
     icon: ic_arrows_left_right,
   },
 ];
