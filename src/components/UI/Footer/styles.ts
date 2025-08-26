@@ -19,9 +19,20 @@ export const Inner = styled.main`
 `;
 
 export const FooterLogo = styled.div`
+  /* Align with navbar logo ratio: ~3:1 */
+  width: 18.75rem; /* 300px */
+  height: 6.25rem; /* 100px => 3:1 ratio */
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   @media (max-width: 768px) {
-    width: 13.2rem;
-    height: 5.6rem;
+    /* Use same mobile sizing as navbar for visual consistency */
+    width: 13.75rem; /* 220px */
+    height: 4.25rem; /* 68px (approx) */
     img {
       width: 100%;
       height: 100%;

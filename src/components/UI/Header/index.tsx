@@ -10,7 +10,7 @@ import {
   AbsoluteLinks,
   BurgerMenu,
 } from './styles';
-import raft_logo from '../../../../public/svgs/raft_logo.svg';
+import poligap_logo from '../../../../public/images/Poligap_logo_blank.png';
 import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import { GetStartedButton } from '@/components';
 import AnimatedLink from '@/components/Common/AnimatedLink';
@@ -24,7 +24,9 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={raft_logo} alt="poligap_ai_logo" priority />
+          <div className="logo">
+            <Image src={poligap_logo} alt="poligap_ai_logo" fill priority />
+          </div>
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}

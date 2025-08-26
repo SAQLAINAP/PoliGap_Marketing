@@ -21,11 +21,22 @@ export const Inner = styled.div`
 `;
 
 export const LogoContainer = styled.div`
+  .logo {
+    position: relative;
+    width: 150px; /* wider for visibility */
+    height: 50px; /* taller for visibility */
+  }
+
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
+    .logo {
+      width: 220px;
+      height: 68px;
+    }
   }
 `;
 
