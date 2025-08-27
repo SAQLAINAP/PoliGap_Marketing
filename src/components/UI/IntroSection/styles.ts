@@ -78,36 +78,91 @@ export const CardsContainer = styled.div`
   position: relative;
   margin-bottom: 7.77rem;
   width: 100%;
+  height: 300px;
+
+  @media (max-width: 768px) {
+    height: 200px;
+    margin-bottom: 5rem;
+  }
 `;
 
 export const LeftImage = styled(Image)`
-  transform: rotate(270deg);
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translateX(-50%) translateY(-50%);
   position: absolute;
-  top: 64px;
-  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  top: 50%;
+  left: 50%;
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  z-index: 1;
 
   &.active {
-    transform: rotate(70.281deg) translate(-50%, 60%);
-    top: 60%;
+    transform: translateX(-200%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+
+    &.active {
+      transform: translateX(-150%) translateY(-50%);
+    }
   }
 `;
 
 export const MiddleImage = styled(Image)`
-  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   z-index: 3;
   cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  &:hover {
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  @media (max-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+  }
 `;
 
 export const RightImage = styled(Image)`
-  width: 21.875rem;
-  height: 13.875rem;
-  transform: rotate(90deg);
-  top: 65px;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translateX(-50%) translateY(-50%);
   position: absolute;
-  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  top: 50%;
+  left: 50%;
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  z-index: 2;
 
   &.active {
-    transform: rotate(-70.281deg) translate(50%, 60%);
-    top: 60%;
+    transform: translateX(100%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+
+    &.active {
+      transform: translateX(50%) translateY(-50%);
+    }
   }
 `;
