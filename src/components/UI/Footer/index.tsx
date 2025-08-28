@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import poligap_logo from '../../../../public/images/Poligap_logo.png';
 import ic_document_duplicate from '../../../../public/svgs/ic_document_duplicate.svg';
 import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
@@ -7,17 +8,26 @@ import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 const linksArr = [
   {
     title: 'About us',
-    links: ['Our Company', 'Careers', 'Press kits'],
+    links: [
+      { label: 'Our Company', href: '/company' },
+      { label: 'Careers', href: '/careers' },
+    ],
   },
   {
     title: 'Legal',
-    links: ['Terms of use', 'Privacy policy', 'About us'],
+    links: [
+      { label: 'Terms & Privacy', href: '/terms' },
+      { label: 'About us', href: '/about' },
+    ],
   },
   {
-    title: 'About us',
-    links: ['Contact us', 'FAQ'],
+    title: 'Support',
+    links: [
+      { label: 'Contact us', href: '/contact' },
+      { label: 'FAQ', href: '/faq' },
+    ],
   },
-];
+] as const;
 
 import {
   Wrapper,
@@ -60,7 +70,9 @@ const Footer = () => {
                   <h3>{l.title}</h3>
                   <LinksContainer>
                     {l.links.map((link, i) => (
-                      <li key={i}>{link}</li>
+                      <li key={i}>
+                        <Link href={link.href}>{link.label}</Link>
+                      </li>
                     ))}
                   </LinksContainer>
                 </GridColumn>

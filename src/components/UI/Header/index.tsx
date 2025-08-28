@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   Wrapper,
   Inner,
@@ -38,7 +39,9 @@ const Header = () => {
         </LogoContainer>
         <Nav className={isOpen ? 'active' : ''}>
           {links.map((link, i) => (
-            <AnimatedLink key={i} title={link.linkTo} />
+            <Link key={i} href={link.url}>
+              <AnimatedLink title={link.linkTo} />
+            </Link>
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
